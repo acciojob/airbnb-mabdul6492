@@ -30,7 +30,7 @@ public class HotelManagementService {
     public String getHotelWithMostFacilities() {
         Map<String, Hotel> allHotels = hotelManagementRepository.getHotelRepo();
         List<String> hotelWithMostFacilities = new ArrayList<>();
-        int mostFacilities = 0;
+        int mostFacilities = 1;
 
         for(Hotel hotel: allHotels.values()){
             int currFacilities = hotel.getFacilities().size();
